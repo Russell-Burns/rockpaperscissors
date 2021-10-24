@@ -17,7 +17,7 @@ const getUserChoice = userInput => {
       return 'scissors';
     }
   }
-  const determineWinner = (userChoice, computerChoice) => {
+  const knowTheWinner = (userChoice, computerChoice) => {
     if (userChoice === computerChoice) {
       return 'Tie game!';
     }
@@ -51,6 +51,6 @@ const getUserChoice = userInput => {
     const computerChoice = getComputerChoice();
     console.log('You threw: ' + userChoice);
     console.log('The computer threw:' + computerChoice);
-    console.log(determineWinner(userChoice, computerChoice));
+    console.log(knowTheWinner(userChoice, computerChoice));
   }
   playGame();
